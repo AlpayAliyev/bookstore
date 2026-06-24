@@ -1,0 +1,21 @@
+package com.example.bookstore;
+import jakarta.persistence.Entity;
+import jakarta.persistence.*;
+import  lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+@Table(name = "books")
+public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String title;
+    private String author;
+    private double price;
+
+
+}
