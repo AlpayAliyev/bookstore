@@ -1,0 +1,15 @@
+### GET - bütün kitablar
+GET http://localhost:8080/books
+
+### POST - yeni kitab
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "umumi tarix tarixi",
+  "author": "rasim esgerli",
+  "price": 13.00
+}
+
+### GET - 1 id-li kitab
+GET http://localhost:8080/books/1
